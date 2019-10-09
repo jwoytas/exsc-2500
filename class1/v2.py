@@ -1,4 +1,4 @@
-# This program reads text input and counts the number of "Target" words 
+# This program reads text input and counts the number of "Target" words
 # and the number of unique words
 
 
@@ -18,7 +18,7 @@ def readWords():
 def printDetails(targetCount, uniqueWords):
   print('Number of target words: ' + str(targetCount))
   print('Number of unique words: %d'  % len(uniqueWords))
-  print('The first 5 unique words are: ', uniqueWords[0:5])  
+  print('The first 5 unique words are: ', uniqueWords[0:5])
 
 
 def main():
@@ -39,4 +39,3 @@ def main():
   printDetails(targetCount, uniqueWords)  # Print summary
 
 main()
-
