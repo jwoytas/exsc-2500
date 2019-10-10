@@ -1,5 +1,6 @@
-# This program reads text input and counts the number of "Target" words
-# and the number of unique words
+# This program reads text input and counts the number of "Target" words.
+# It also counts the number of occurances of each unique word
+
 import string
 
 
@@ -59,4 +60,6 @@ def main():
   # All words processed, display summary
   printDetails(targetCount, uniqueWords, uniqueWordCount)
 
-main()
+# Enable this code to be used as a module
+if __name__ == "__main__":
+  main()
