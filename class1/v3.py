@@ -12,7 +12,7 @@ def readWords():
     except EOFError:
       return listOfWords
 
-    #Add current line of words to the complete list of words
+    #Add current line of words to the complete list of words from all lines of input
     listOfWords.extend(lineOfWords.split())
 
 
@@ -40,9 +40,9 @@ def main():
   targetCount = 0
   targetWords = ["the","data","learn", "python"]
   uniqueWords = []
-  uniqueWordCount = []
+  uniqueWordCount = []                    # The number of times the unique word appears
 
-  for word in readWords():                # For each word do this
+  for word in readWords():                # For each word...
 
     word = normalizeWord(word)            # Remove punctuation and case
 
@@ -56,6 +56,7 @@ def main():
       i = uniqueWords.index(word)         # The word is not unique
       uniqueWordCount[i] =  uniqueWordCount[i] + 1  # Increment the word counter
 
-  printDetails(targetCount, uniqueWords, uniqueWordCount)  # Print summary
+  # All words processed, display summary
+  printDetails(targetCount, uniqueWords, uniqueWordCount)
 
 main()
