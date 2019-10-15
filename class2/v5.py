@@ -38,8 +38,8 @@ def printDetails(targetWords, targetCount, uniqueWords, uniqueWordCount):
   print('The target words are: ', targetWords)
   print('Number of target words found: ' + str(targetCount))
   print('---------------------------------')
-  print('The first 5 unique words are: ', uniqueWords[0:5])
   print('The number of unique words found: %d'  % len(uniqueWords))
+  print('The first 5 unique words are: ', uniqueWords[0:5])
   print('The first 5 unique words counts are: ', uniqueWordCount[0:5])
   print('---------------------------------')
 

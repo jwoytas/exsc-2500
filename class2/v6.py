@@ -1,5 +1,17 @@
-# This program reads text input and counts the number of "Target" words.
-# It also counts the number of occurances of each unique word
+# This python program reads input from files target.words.txt, weather.txt
+# The program will search for any target word in the data (weather.txt)
+# and will classify the line of data accordingly
+#
+# In addition, the program will also:
+#   - Handle properly an end-of-file (EOF) for files
+#   – Input files can have multiple words on each line
+#   – Count the number of unique words in the input
+#   – Use user-defined functions, and main()
+#   –NEW: Classify weather.txtlines using target words.
+#
+# In addition, the program will also:
+#   - strip and punctuation and convert all target and data words to lowercase
+#
 
 import string
 
