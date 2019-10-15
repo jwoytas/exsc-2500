@@ -20,7 +20,7 @@ def safe_open(filename):
 # This method will attempt to read a line of input from a file
 #   Accepts: fileobject fo
 #   Returns: list (of words)
-#   Handles exceptions by quiting the program
+#   Handles exceptions returning an empty string 
 def safe_input(fo):
   try:
     lineOfWords = fo.readline().strip()
