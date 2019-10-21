@@ -1,0 +1,22 @@
+True Positive (is weather /  targetWords )
+true the lack of sun makes it cold
+* Will increase recall and precision
+
+False Positive  (not about weather / targetWords )
+false the picture on the tv is snow
+false the beer is cold
+* Will decrease precision but not recall
+
+
+False negative (is about weather / no targetWords )
+true it is wet outside
+true red sky at night is sailors delight
+* Will decrease recall but not precision
+
+True negative (not about weather / no targetWords )
+false the dog went to the park
+* This doesn't help precision or recall
+
+
+-Add true positives
+-reduce False pos/neg

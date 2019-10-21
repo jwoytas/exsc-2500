@@ -1,0 +1,31 @@
+true	nice weather eh
+true	snow is coming
+true	too cold for september
+true	what happend to the sun
+true	i had to get my snow boots
+true	winter jackets are out
+true	rain on the weekend
+true	snow before halloween
+true	rain boots for sure
+true	wind is high
+true	jackets zipped today
+false	good food
+false	i need a coffee
+false	my back aches
+false	hey give that back
+false	tim hortons is too busy
+false	see you in sub
+false	call me
+false	i love snow cones
+false	foot long falafel
+false	hot tea is a good thing
+false	hot pockets for sure
+false	going home early
+false	i left my laptop at home
+false	all is fine
+false	how are you
+false	cannot get this to work
+false	ouch
+false	hello
+false	i do not need help
+false	no worries
