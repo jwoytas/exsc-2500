@@ -9,8 +9,6 @@ true	snow before halloween
 true	rain boots for sure
 true	wind is high
 true	jackets zipped today
-
-
 false	good food
 false	i need a coffee
 false	my back aches
