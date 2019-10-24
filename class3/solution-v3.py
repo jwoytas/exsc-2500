@@ -116,7 +116,7 @@ def printDetails(targetWords, uniqueWords, uniqueWordCount):
 def main():
   # Initialize variables
   twFileName = 'target.words.txt'         # Target Words file
-  dataFileName = 'weather.txt'            # Data Words file
+  dataFileName = 'weather.v2.txt'            # Data Words file
 
   uniqueWords = []      # Store all unique Words
   uniqueWordCount = []  # Store the number of times this unique word was found
