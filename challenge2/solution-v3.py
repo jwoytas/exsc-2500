@@ -131,8 +131,9 @@ def addOrIncrement(word, uniqueWords, uniqueCount):
 #####################################
 def main():
   # Initialize variables
-  twFileName = 'target.words.txt'         # Target Words file
-  dataFileName = 'weather.v2.txt'         # Data Words file
+  # twFileName = 'target.words.txt'         # Target Words file
+  # dataFileName = 'weather.v2.txt'         # Data Words file
+  dataFileName = 'rotten.toms.maleficient.moe.txt'
 
   trueList =  ['true', 't']   # constant values
   falseList = ['false', 'f']
