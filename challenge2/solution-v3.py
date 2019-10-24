@@ -65,7 +65,7 @@ def readTargetWords(filename):
   twList = twLine.split()           # Save all data to the return list
   twList = normalize_data(twList)   # Remove punctuation, duplicates and convert to lowercase
 
-  return twList                     # Return the list of target words
+  return twList      # Return the list of target words
 
 # This method will read all lines from a file and return a list of lists that contain each line and words
 #   Accepts: string filename
@@ -128,7 +128,7 @@ def addOrIncrement(word, uniqueWords, uniqueCount):
 
 #####################################
 ### Program execution begins here ###
-
+#####################################
 def main():
   # Initialize variables
   twFileName = 'target.words.txt'         # Target Words file
@@ -154,6 +154,7 @@ def main():
   falseUniqueWords = []
   falseCount = []
 
+  # This program does not call readTargetWords
   # Safely read and normalize target words from a file
   # twList = readTargetWords(twFileName)
 
@@ -167,7 +168,7 @@ def main():
     # The first word of each line represents "Ground Truth"
     groundTruth = lineOfWords[0].lower()
 
-    for word in lineOfWords[1:]:    # For each word (in this line of text)...
+    for word in lineOfWords[1:]:    # For each word (except the first word)...
 
       # Track unique words and number of occurances in two categories, (true or false)
       if groundTruth in trueList:
@@ -178,8 +179,6 @@ def main():
         # We cannot trust the ground truth, figure this out later
         pass
 
-
-  #  All unique words processed
 
   ## Second loop will determine target words
   # Words that appear more in true statements than false statements
@@ -199,10 +198,13 @@ def main():
         # This word has become a targetWord
         targetWords.append(word)
 
+
   # Print first line....
   print('------------------------------------------------------------------------------------------')
   print(" 'TargetWordFound?' / 'GroundTruth' : Classification : Number of target words : Statement ")
   print('------------------------------------------------------------------------------------------')
+
+
   ## Third loop will count targetwords
   for lineOfWords in dataList:      #  For each line (list) of words...
 
@@ -233,7 +235,7 @@ def main():
     else:
       print('?: ', end='')
 
-    # Print out the line of (unique) words
+    # Print out the line of words
     for word in lineOfWords:
       print(word, end=' ')
 
