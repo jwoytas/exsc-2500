@@ -182,6 +182,11 @@ def main():
 
 
   ## Second loop will determine target words
+  #   Criteria (currently) for a word to be considered a target word
+  #   1. The word must occur more in true statements than in false statements
+  #   2. The word must occur two or more times
+  #   3. The word length must be lareger than 3 characters
+
   # Words that appear more in true statements than false statements
   # may should be considered as a possible target word
   for word in trueUniqueWords:
@@ -196,8 +201,11 @@ def main():
         # The word occures more in true statements
         # The strict comparision operatore also ensures this word occures more than once
 
-        # This word has become a targetWord
-        targetWords.append(word)
+        if len(word) > 3:
+          # Word length must be larger than 3, (disqualify, 'a', 'i, 'and', 'the', ect...)
+
+          # This word has become a targetWord
+          targetWords.append(word)
 
 
   # Print first line....
