@@ -1,4 +1,4 @@
-## EXSC-2500  *University of Alberta - Faculty of Extension*
+## EXSC-2500 ## *University of Alberta - Faculty of Extension*
 ### Python Programming and Machine Learning
 
 This repository is to track learning and exercises on the topic of python programming and machine learning.
