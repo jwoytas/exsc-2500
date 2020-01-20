@@ -1,16 +1,39 @@
-## EXSC-2500 
+### EXSC-2500 
 
-*University of Alberta - Faculty of Extension*
+**University of Alberta - Faculty of Extension**
 
-### Python Programming and Machine Learning
+#### Python Programming and Machine Learning
 
 This repository is to track learning and exercises on the topic of python programming and machine learning.
 
-Class 1 - Introduction to python programming
-        - Excercises include writting a python program to:
-           - accept input from the command line and a text file
-           - count 'target words'
-           - count 'unique words' 
+
+#####  Class 1 - Introduction to python programming
+*  Excercises include writting a python program to:
+*  Accept input from the command line and a text file
+*  Count 'target words'
+*  Count 'unique words'
+
+```python
+# Read all the input and return a list of words
+def readWords():
+  listOfWords = []
+  while True:
+    try:
+      lineOfWords = input()
+    except EOFError:
+      return listOfWords
+
+    #Add current line of words to the complete list of words from all lines of input
+    listOfWords.extend(lineOfWords.split())
+```
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+
+
 
 Class 2 - Expanding python programming
         - Iteritive software development
@@ -30,7 +53,6 @@ Class 3 - Introduction to Machine Learning
                  - Calculate Precision and Recall on a test data file without 
                    being given any target words (create your own target words from the data)
 
-### There's a horizontal rule below this.
 
 * * *
 
