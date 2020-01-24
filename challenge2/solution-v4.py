@@ -130,7 +130,7 @@ def main():
   # Changing target word functionality
   targetWords = []
 
-  # Initially we will keep track unique words for 'true' and 'false'
+  # Initially we will keep track unique words for 'true' and 'false' ground thruths
   trueUniqueWords = []
   trueCount = []
   falseUniqueWords = []
@@ -160,7 +160,7 @@ def main():
 
 
   ## Second loop will determine target words
-  #   Criteria (currently) for a word to be considered a target word
+  #   Criteria for a word to be considered a target word
   #   1. The word must occur more in true statements than in false statements
   #   2. The word must occur two or more times
   #   3. The word length must be lareger than 3 characters
@@ -172,6 +172,7 @@ def main():
     # Find the index of this word so we can find the number of occurances
     iTrue = trueUniqueWords.index(word)
 
+    # Check if the word occurs more than once and is more than 3 characters
     if trueCount[iTrue] > 1 and len(word) > 3:
   
         if word not in falseUniqueWords:
