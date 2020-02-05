@@ -118,7 +118,6 @@ def main():
   # twFileName = 'target.words.txt'         # Target Words file
   # dataFileName = 'weather.v2.txt'         # Data Words file
   dataFileName = 'movie_review.txt'
-  outputFileName = '../jwoytas.github.io/data.md'
 
   trueList =  ['true', 't']   # constant values
   falseList = ['false', 'f']
