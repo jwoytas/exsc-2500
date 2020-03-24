@@ -8,10 +8,10 @@ This repository is to track learning and exercises on the topic of python progra
 
 
 #####  Class 1 - Introduction to python programming
-*  Excercises include writting a python program to:
-*  Accept input from the command line and a text file
-*  Count 'target words'
-*  Count 'unique words'
+-  Excercises include writting a python program to:
+  - Accept input from the command line and a text file
+  - Count 'target words'
+  - Count 'unique words'
 
 ```python
 # Read all the input and return a list of words
@@ -26,12 +26,6 @@ def readWords():
     #Add current line of words to the complete list of words from all lines of input
     listOfWords.extend(lineOfWords.split())
 ```
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
 
 
 #####  Class 2 - Expanding python programming
@@ -57,14 +51,14 @@ for word in readWords():                # For each word... (read input)
 
 
 #####  Class 3 - Introduction to Machine Learning
-*  Supervised ML and classification
-*  Training data
-*  Performance and accuaracy metrics 
-  -- Precision
-  -- Recall 
-  -- Ground Truth
-*  Challenge assignment:
-Calculate Precision and Recall on a test data file without being given any target words (create your own target words from the data)
+-  Supervised ML and classification
+-  Training data
+-  Performance and accuaracy metrics 
+  - Precision
+  - Recall 
+  - Ground Truth
+- Challenge assignment:
+  - Calculate Precision and Recall on a test data file without being given any target words (create your own target words from the data)
 ```python
     wordsfo.close()
     print( "The number of lines/training instances ", linesOfData)
