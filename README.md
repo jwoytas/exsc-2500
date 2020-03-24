@@ -39,7 +39,7 @@ def readWords():
 *  Using a debugger, breakpoints and inspecting variables
 *  Variable scope and User-defined functions
 *  Additionial python parsing
-'''python
+```python
 for word in readWords():                # For each word... (read input)
 
     word = normalizeWord(word)            # Remove punctuation and case
@@ -53,19 +53,19 @@ for word in readWords():                # For each word... (read input)
     else:
       i = uniqueWords.index(word)         # The word is not unique
       uniqueWordCount[i] =  uniqueWordCount[i] + 1  # Increment the word counter
-'''
+```
 
 
 #####  Class 3 - Introduction to Machine Learning
 *  Supervised ML and classification
 *  Training data
 *  Performance and accuaracy metrics 
-  - Precision
-  - Recall 
-  - Ground Truth
-*  Challenge assignment to:
-  - Calculate Precision and Recall on a test data file without being given any target words (create your own target words from the data)
-'''python
+  -- Precision
+  -- Recall 
+  -- Ground Truth
+*  Challenge assignment:
+Calculate Precision and Recall on a test data file without being given any target words (create your own target words from the data)
+```python
     wordsfo.close()
     print( "The number of lines/training instances ", linesOfData)
     print('TP:   %3d  TN:  %3d' % (tpCount, tnCount))
@@ -74,4 +74,4 @@ for word in readWords():                # For each word... (read input)
     precision = (1.0*tpCount) / (tpCount+fpCount)
     recall =  (1.0*tpCount) / (tpCount+fnCount)
     print('Precision: %5f Recall: %5f' % (precision, recall))
-'''
+```
