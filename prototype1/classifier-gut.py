@@ -35,7 +35,7 @@ def main():
 
   # Initialize variables
   dataFileName   = 'movie_review.txt'
-  outputFileName = '..\\..\\jwoytas.github.io\\data.md'
+  outputFileName = 'data.md'
 
   # Open the input data
   dataFile   = sf.safe_open(dataFileName, 'r')    # Open the data file for reading
@@ -71,11 +71,6 @@ def main():
       else:
         # We cannot trust the ground truth, figure this out later
         pass
-
-
-
-
-
 
 
   outputFile = sf.safe_open(outputFileName, 'w')  # Open the output file for writting
